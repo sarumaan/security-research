@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SecurityLab — Token Authorization</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="loginScreen" class="login-screen">
+    <div class="login-card">
+        <div class="login-logo">◆</div>
+
+        <h1>Sign in</h1>
+        <p>Access your security lab workspace.</p>
+
+        <form id="loginForm">
+            <label for="email">Email</label>
+            <input
+                id="email"
+                type="email"
+                value="bob.reader@example.test"
+                required
+            >
+
+            <label for="password">Password</label>
+            <input
+                id="password"
+                type="password"
+                placeholder="Enter your password"
+                required
+            >
+
+            <button type="submit">
+                Sign in
+            </button>
+        </form>
+
+        <div id="loginError" class="login-error"></div>
+        <button
+        type="button"
+        id="loginResetButton"
+        class="login-reset-button"
+        > Reset Lab
+        </button>
+
+        <div id="resetMessage" class="reset-message"></div>
+    </div>
+</div>
+
+<div class="app">
+
+    <aside class="sidebar">
+
+        <div class="brand">
+            <div class="brand-mark">S</div>
+
+            <div>
+                <strong>SecurityLab</strong>
+                <span>Authorization Lab</span>
+            </div>
+        </div>
+
+        <nav>
+            <button class="nav-item active">
+                <span>▦</span>
+                Dashboard
+            </button>
+
+            <button class="nav-item">
+                <span>◉</span>
+                Members
+            </button>
+
+            <button class="nav-item">
+                <span>◆</span>
+                Access Tokens
+            </button>
+
+            <button class="nav-item">
+                <span>⚙</span>
+                Settings
+            </button>
+        </nav>
+
+        <div class="sidebar-bottom">
+
+            <div class="lab-mode">
+                <span class="status-dot"></span>
+
+                <div>
+                    <strong>Vulnerable Mode</strong>
+                    <small>Authorization flaw enabled</small>
+                </div>
+            </div>
+
+            <button id="resetButton" class="reset-button">
+                Reset Lab
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <main class="main">
+
+        <header class="topbar">
+
+            <div>
+                <span class="breadcrumb">Acme Corporation</span>
+                <h1>Access Tokens</h1>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">R</div>
+
+                <div>
+                    <strong>Bob Reader</strong>
+                    <small>Reader</small>
+                </div>
+
+                <span class="chevron">⌄</span>
+            </div>
+
+        </header>
+
+
+        <section class="content">
+
+            <div class="intro">
+
+                <div>
+                    <h2>Organization tokens</h2>
+
+                    <p>
+                        Manage API credentials belonging to members
+                        of this organization.
+                    </p>
+                </div>
+
+                <div class="lab-badge">
+                    <span></span>
+                    Vulnerable Lab
+                </div>
+
+            </div>
+
+
+            <div class="security-banner">
+
+                <div class="banner-icon">!</div>
+
+                <div>
+                    <strong>Authorization testing environment</strong>
+
+                    <p>
+                        This lab intentionally contains a broken
+                        object-level authorization check.
+                    </p>
+                </div>
+
+            </div>
+
+
+            <div class="stats">
+
+                <div class="stat-card">
+                    <span>Organization</span>
+                    <strong>Acme Corporation</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Members</span>
+                    <strong>2</strong>
+                </div>
+
+                <div class="stat-card">
+                    <span>Active Tokens</span>
+                    <strong id="tokenCount">2</strong>
+                </div>
+
+            </div>
+
+
+            <div class="section-heading">
+
+                <div>
+                    <h3>API Tokens</h3>
+                    <p>Credentials currently registered in the organization.</p>
+                </div>
+
+            </div>
+
+
+            <div id="tokenList" class="token-list">
+
+                <!-- Tokens will be loaded by app.js -->
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
+
+
+<div id="toast" class="toast"></div>
+
+<script src="app.js"></script>
+
+</body>
+</html>

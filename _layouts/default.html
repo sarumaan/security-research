@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>{{ page.title }} | {{ site.title }}</title>
+
+    <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+</head>
+
+<body>
+
+<header>
+    <div class="container">
+        <h1>
+            <a href="{{ '/' | relative_url }}">
+                {{ site.title }}
+            </a>
+        </h1>
+
+        <nav>
+            <a href="{{ '/' | relative_url }}">Home</a>
+            <a href="{{ '/research/' | relative_url }}">Research</a>
+            <a href="{{ '/methodology/' | relative_url }}">Methodology</a>
+            <a href="{{ '/projects/' | relative_url }}">Projects</a>
+            <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        </nav>
+    </div>
+</header>
+
+<main class="container">
+    {{ content }}
+</main>
+
+<footer>
+    <div class="container">
+        <p>Adini Adini Snow — Web & API Security Researcher</p>
+    </div>
+</footer>
+
+</body>
+</html>

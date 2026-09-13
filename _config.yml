@@ -1,0 +1,8 @@
+description: "Application security research focused on authorization, GraphQL, IDOR and business logic."
+
+markdown: kramdown
+
+collections:
+  research:
+    output: true
+    permalink: /research/:path/

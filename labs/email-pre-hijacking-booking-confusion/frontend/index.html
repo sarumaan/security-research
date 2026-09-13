@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Booking Security Lab</title>
+<link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<div class="shell">
+<header>
+<div><small>APPLICATION SECURITY LAB 02</small><h1>Booking Workspace</h1></div>
+<div class="header-actions"><span id="mode" class="badge">Vulnerable mode</span><button id="logout">Logout</button></div>
+</header>
+
+<section id="auth" class="panel auth">
+<div><small>AUTHENTICATION</small><h2>Account access</h2><p>Use separate browser profiles to simulate attacker and victim sessions.</p></div>
+<div class="forms">
+<form id="register"><h3>Register</h3><input id="regEmail" type="email" placeholder="email@example.test" required><input id="regPassword" type="password" placeholder="Password" required><button>Create account</button></form>
+<form id="login"><h3>Login</h3><input id="loginEmail" type="email" placeholder="email@example.test" required><input id="loginPassword" type="password" placeholder="Password" required><button>Sign in</button></form>
+</div>
+</section>
+
+<section id="app" hidden>
+<section class="panel identity"><div><small>CURRENT SESSION</small><h2 id="email">—</h2><p id="status">—</p></div><div class="actions"><button id="verify">Verify synthetic email</button><button id="reset" class="danger">Reset lab</button></div></section>
+<div class="columns">
+<section class="panel"><small>BOOKING FLOW</small><h2>Create booking</h2><p>The vulnerable mode accepts an unverified booking email.</p>
+<form id="booking" class="booking">
+<input id="guest" placeholder="Guest name" required>
+<input id="bookingEmail" type="email" placeholder="Booking email" required>
+<input id="hotel" value="Hotel Example" required>
+<select id="room"><option>Standard Room</option><option>Premium Room</option><option>Suite</option></select>
+<label>Check-in<input id="checkin" type="date" required></label>
+<label>Check-out<input id="checkout" type="date" required></label>
+<button>Create booking</button>
+</form></section>
+<section class="panel"><small>ACCOUNT DATA</small><h2>My bookings</h2><div id="list"></div></section>
+</div>
+<section class="panel"><small>LAB SETTINGS</small><h2>Authorization mode</h2><button id="vulnerable">Vulnerable mode</button><button id="patched">Patched mode</button></section>
+</section>
+<p id="message" aria-live="polite"></p>
+</div>
+<script src="/app.js"></script>
+</body>
+</html>
