@@ -35,8 +35,7 @@ My research focuses particularly on finding cases where an application's intende
 **Independent Security Researcher on BugCrowd and HackerOne**  
 *2+ years*
 
-- 2+ paid vulnerability findings across HackerOne and Bugcrowd
-- 6+ additional reports confirmed as duplicates
+- 10+ vulnerabilities found across HackerOne and Bugcrowd
 - Research conducted across 4+ security programs
 - Hands-on testing of web applications, APIs, and GraphQL applications
 - Manual investigation of authorization, access-control, authentication, and business-logic vulnerabilities
