@@ -34,7 +34,7 @@ account and cause a subsequent booking made with that email to become
 associated with the attacker's account, exposing booking information
 and personal data.
 
-[Read the case study](/security-research/research/case-studies/email-pre-hijacking-booking-account-confusion/index.md)
+[Read the case study](case-studies/email-pre-hijacking-booking-account-confusion/index.md)
 
 ---
 
@@ -50,7 +50,7 @@ attacker-controlled URL with a live authentication token.
 The token was captured using Burp Collaborator, demonstrating
 authentication token disclosure and a direct account takeover path.
 
-[Read the case study](/security-research/research/case-studies/sign-in-link-injection-token-leakage/index.md)
+[Read the case study](case-studies/sign-in-link-injection-token-leakage/index.md)
 
 ---
 
@@ -66,7 +66,7 @@ The server accepted the unauthorized request, returned `201 Created`,
 and delivered the invitation to the target user. After accepting the
 invitation, the user became a member of the target organization.
 
-[Read the case study](/security-research/research/case-studies/non-admin-member-invites-premium-organization/index.md)
+[Read the case study](case-studies/non-admin-member-invites-premium-organization/index.md)
 
 ---
 
@@ -81,4 +81,4 @@ unauthenticated access to sensitive user information, including names,
 email addresses, user identifiers, room numbers, dates, and financial
 data.
 
-[Read the case study](/security-research/research/case-studies/firebase-pii-exposure/index.md)
+[Read the case study](case-studies/firebase-pii-exposure/index.md)
