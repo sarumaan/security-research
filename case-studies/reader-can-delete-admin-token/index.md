@@ -11,7 +11,7 @@ title: Reader Access Level Can Delete Admin Access Token
 **Platform:** Bug bounty program  
 **OWASP:** API1:2023 — Broken Object Level Authorization
 
-![Sanitized triage evidence](screenshots\admin-idor.png)
+![Sanitized triage evidence](/screenshots/admin-idor.png)
 ```text
 *Sanitized evidence of the report's triaged state. Private report identifiers, target details, and sensitive information have been redacted.*
 ```

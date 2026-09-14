@@ -10,7 +10,7 @@ title: Sign-In Link Injection Enables Account Takeover
 **Affected Function:** Customer sign-in link  
 **Parameter:** `siteUrl`
 
-![Sanitized triage evidence](screenshots\link-injection.png)
+![Sanitized triage evidence](/screenshots/link-injection.png)
 ```text
 *Sanitized evidence of the report's triaged state. Private report identifiers, target details, and sensitive information have been redacted.*
 ```

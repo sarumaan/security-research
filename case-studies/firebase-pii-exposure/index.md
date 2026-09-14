@@ -9,7 +9,7 @@ title: API Key Exposure Leads to Unauthorized PII and Financial Data Access
 **Status:** Validated - Paid    
 **Affected Service:** Firebase Realtime Database
 
-![Sanitized triage evidence](screenshots\firebase-pii.png)
+![Sanitized triage evidence](/screenshots/firebase-pii.png)
 ```text
 *Sanitized evidence of the report's triaged state. Private report identifiers, target details, and sensitive information have been redacted.*
 ```
