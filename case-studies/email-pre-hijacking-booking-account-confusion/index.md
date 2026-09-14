@@ -11,7 +11,7 @@ title: Email Pre-Hijacking Causes Booking and Account Confusion
 **Environment:** Production  
 **Affected flows:** Email Change + Booking / Account Creation
 
-![Sanitized triage evidence](/screenshots/email-prehijack.png)
+![Sanitized triage evidence](screenshots/email-prehijack.png)
 ```text
 *Sanitized evidence of the report's triaged state. Private report identifiers, target details, and sensitive information have been redacted.*
 ```
