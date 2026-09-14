@@ -20,7 +20,7 @@ application-security findings from my previous engagements.
 A reader-level access token could delete an administrator-level token
 record by changing the object identifier in the API request.
 
-[Read the case study](/security-research/research/case-studies/reader-can-delete-admin-token/index.md)
+[Read the case study](/reader-can-delete-admin-token/index.md)
 
 ---
 
