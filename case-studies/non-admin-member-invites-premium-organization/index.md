@@ -10,7 +10,7 @@ title: Non-Admin Member Can Invite Users Into Premium Organization
 **Affected Function:** Organization member invitation  
 **Endpoint:** `POST /folder/v1/organizations/{organizationId}/invites`
 
-![Sanitized triage evidence](/screenshots/invite.png)
+![Sanitized triage evidence](screenshots/invite.png)
 ```text
 *Sanitized evidence of the report's triaged state. Private report identifiers, target details, and sensitive information have been redacted.*
 ```
