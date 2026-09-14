@@ -5,4 +5,4 @@ markdown: kramdown
 collections:
   research:
     output: true
-    permalink: /research/:path/
+    permalink: /case-studies/:path/
